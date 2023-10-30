@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Jade",
+            "request": "launch",
+            "mainClass": "jade.Boot",
+            "args": "-gui -agents buyer:BookBuyerAgent(Winter);seller1:BookSellerAgent;seller2:BookSellerAgent",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/lib/jade-4.5.3.jar"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "BookBuyerAgent",
+            "request": "launch",
+            "mainClass": "jade.Boot",
+            "args": "-agents buyer:BookBuyerAgent(Winter)",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/lib/jade-4.5.3.jar"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "BookSellerAgent",
+            "request": "launch",
+            "mainClass": "jade.Boot",
+            "args": "-agents seller:BookSellerAgent",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/lib/jade-4.5.3.jar"
+            ]
+        },
+    ]
+}
